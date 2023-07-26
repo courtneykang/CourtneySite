@@ -9,9 +9,73 @@
 
 <em>emphasized </em><strong>so <span>strong</span></strong>
 
-<p>This is </p><strong>really </strong>counter intuitive.</p>
+<span><p>This is </p><strong>really </strong>counter intuitive.</p></span>
 
+<span>This is <strong>really </strong>counter intuitive.</span>
 
+<h2>Flexbox Ex.1</h2>
+<div class="fb-ex-1-parent">
+    <div class="fb-ex-1-child1">child #1</div>
 
+    <div class="fb-ex-1-child2">child #2</div>
+</div>
+
+<h2>Flexbox Ex.2</h2>
+<div class="fb-ex-2-parent">
+    <div class="fb-ex-2-child1">older child</div>
+    <div class="fb-ex-2-child2">younger child</div>
+</div>
+
+<style>
+    .fb-ex-1-parent{
+        background-color: rgb(47, 137, 201);
+        display: flex;
+        padding: 12px;
+        width: 500px;
+
+    }
+    .fb-ex-1-child1{
+        background-color: rgb(87, 225, 179);
+        color: black;
+        border: solid 2px black;
+        padding: 1%;
+        width: 46%;
+        margin: 2%;
+    }
+    .fb-ex-1-child2{
+        background-color: rgb(77, 204, 113);
+        color: black;
+        border: solid 2px black;
+        padding: 1%;
+        width: 46%;
+        margin: 2%;
+    }
+    .fb-ex-2-parent{
+        background-color: rgb(109, 125, 136);
+        display: flex;
+        padding: 3%;
+        width: 90%;
+        height: 30%;
+        border: solid 2px black;
+    }
+    .fb-ex-2-child1{
+        background-color: black;
+        color: white;
+        padding: 5%;
+        width: 60%;
+        margin: 1%
+        border: solid 2px black;
+        font-size: 48px;
+    }
+    .fb-ex-2-child2{
+        background-color: brown;
+        color: black;
+        padding: 5%;
+        width: 30%;
+        margin: 1%;
+        border: solid 2px black;
+        font-size: 48px;
+    }
+</style>
 
 <p>go back here <a href="index.html">Home Page.</a></p>

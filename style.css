@@ -12,9 +12,22 @@ h1{
 }
 
 span{
-    color: green;
+    color: black;
 }
 
 .purpleish{
+    background-color: aquamarine;
     color: rgb(175, 96, 175);
+}
+.classic{
+    background-color: rgb(228, 231, 230);
+    color: black;
+}
+
+.box-model-example{
+    background-color: aqua;
+    border: solid 1px black;
+    padding: 10px;
+    margin: 15px;
+    width: 200px;
 }
