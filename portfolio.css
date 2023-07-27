@@ -1,5 +1,9 @@
 body{
     background-color: blanchedalmond;
+    animation-name: example;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
 }
 h1 {
     background-color: rgb(209, 189, 160);
@@ -8,6 +12,10 @@ h1 {
     font-size: 60px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
+    animation-name: example;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
 }
 h3{
     text-align: center;
@@ -36,8 +44,10 @@ span{
     bottom: 0;
 }
 .headshot-parent{ 
-    /*add sliding movement here */
     display: flex;
+    animation-name: slide-right;
+    overflow:hidden;
+    animation-duration: 3s;
 }
 .headshot-child{
     border: solid black 1px;
@@ -54,12 +64,13 @@ span{
 .icons{
     width: 30px;
 }
-.aboutme{
 
-}
 .projects-parent{
     border: purple 2px;
     display: flex;
+    animation-name: slide-right-pr;
+    overflow:hidden;
+    animation-duration: 3s;
 }
 .projects-child{
     font-size: 24px;
@@ -69,6 +80,9 @@ span{
 }
 .attributions-p{
     display: flex;
+    animation-name: slide-right-at;
+    overflow:hidden;
+    animation-duration: 3s;
 }
 .contactme-p{
     display: flex;
@@ -76,6 +90,9 @@ span{
     padding: 0px;
     width: 10%;
     font-size: 20px;
+    animation-name: slide-right-cm;
+    overflow:hidden;
+    animation-duration: 3s;
 }
 .contact-forms{
     list-style-type: none;
@@ -83,3 +100,57 @@ span{
     justify-content: space-around;
     font-size: 24px;;
 }
+
+@keyframes example {
+    from {background-color: blanchedalmond;}
+    to {background-color: rgb(198, 206, 156);}
+  }
+
+
+@keyframes slide-right-hs {
+  from {
+    margin-left: -100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slide-right-pr {
+    from {
+      margin-left: -100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 5%;
+      width: 100%;
+    }
+  }
+
+  @keyframes slide-right-cm {
+    from {
+      margin-left: -100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 10%;
+      width: 100%;
+    }
+  }
+
+  @keyframes slide-right-at {
+    from {
+      margin-left: -100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 15%;
+      width: 100%;
+    }
+  }
