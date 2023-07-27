@@ -35,4 +35,51 @@ span{
     left: 0;
     bottom: 0;
 }
-.
+.headshot-parent{ 
+    /*add sliding movement here */
+    display: flex;
+}
+.headshot-child{
+    border: solid black 1px;
+}
+.headshot-des{
+    color: black;
+    font-size: 30px;
+}
+.headshot{
+    display: flex;
+    width: 150px;
+    border: solid black 4px;
+}
+.icons{
+    width: 30px;
+}
+.aboutme{
+
+}
+.projects-parent{
+    border: purple 2px;
+    display: flex;
+}
+.projects-child{
+    font-size: 24px;
+}
+.projects-icon{
+    border: black 1px;
+}
+.attributions-p{
+    display: flex;
+}
+.contactme-p{
+    display: flex;
+    margin: 1px;
+    padding: 0px;
+    width: 10%;
+    font-size: 20px;
+}
+.contact-forms{
+    list-style-type: none;
+    margin: 2px;
+    justify-content: space-around;
+    font-size: 24px;;
+}
